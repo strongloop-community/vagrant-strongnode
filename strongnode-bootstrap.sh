@@ -18,15 +18,14 @@ then
 		
     # Install StrongLoop Node
     cd /opt
-	# strongloop-node_1.1.4-1_amd64.deb
-	# sudo wget http://strongloop.com/products/downloads/5334/u-0075
-	sudo wget -O strongloop-node_amd64.deb http://strongloop.com/products/downloads/5334/u-0075
-	sudo dpkg -i strongloop-node_amd64.deb
+		# strongloop-node_1.1.4-1_amd64.deb 
+		sudo wget -O strongloop-node_amd64.deb http://45ec19d3127bddec1c1d-e57051fde4dbc9469167f8c2a84830dc.r36.cf1.rackcdn.com/strongloop-suite_1.0.0-1_amd64.deb
+		sudo dpkg -i strongloop-node_amd64.deb
 		
-	#install some npm components
-	sudo npm install -g forever
+		#install some npm components
+		sudo npm install -g forever
 		
-	# Symlink our host strongnode-app-folder to the guest /var/strongnode-app-folder folder
+		# Symlink our host strongnode-app-folder to the guest /var/strongnode-app-folder folder
     ln -s /vagrant/strongnode-app-folder /var/strongnode-app-folder
 		
     echo "You can place other node apps in gthe strongnode-app-folder/ and find them at /var/node-app-folder/"
