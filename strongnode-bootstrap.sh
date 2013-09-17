@@ -32,10 +32,10 @@ then
     echo " 'slc run /var/strongnode-app-folder/myApp/app.js' to run the strong node node app in strongnode-app-folder/myApp"
 		
     # build and run your first StrongLoop App
-	# cd /var/strongnode-app-folder
-	# slnode create web myApp
-	# cd myApp
+		# cd /var/strongnode-app-folder
+		# slnode create web myApp
+		# cd myApp
     # lsnode run app.js
-	# open a browser on your host machine to http://33.33.33.10:3000	
+		# open a browser on your host machine to http://33.33.33.10:3000	
 
 fi
