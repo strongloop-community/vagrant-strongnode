@@ -18,7 +18,7 @@ then
 		
     # Install StrongLoop Node
     cd /opt
-	# strongloop-node_1.1.4-1_amd64.deb 
+	# strongloop-node_1.1.4-1_amd64.deb
 	sudo wget -O strongloop-node_amd64.deb http://45ec19d3127bddec1c1d-e57051fde4dbc9469167f8c2a84830dc.r36.cf1.rackcdn.com/strongloop-suite_1.0.0-1_amd64.deb
 	sudo dpkg -i strongloop-node_amd64.deb
 		
@@ -31,18 +31,35 @@ then
     echo "You can place other node apps in gthe strongnode-app-folder/ and find them at /var/node-app-folder/"
     echo " 'slc run /var/strongnode-app-folder/myApp/app.js' to run the strong node node app in strongnode-app-folder/myApp"
 		
-		cd /var/strongnode-app-folder;
-		slc lb project loopback-node-app;
-		cd loopback-node-app;
-		slc install;
-		slc install strong-cluster-control;
-		slc install strong-agent;
-		slc install loopback@1.0.0;
-		slc lb model product;
-		slc lb model customer;
-		slc lb model store;
-		slc run app.js;
-		echo open a browser on your host machine to http://33.33.33.10:3000 ;
-		echo open a browser on your host machine to http://33.33.33.10:3000/explorer ;;
+		#bootstrap loopback from base
+		cd /var/strongnode-app-folder
+		slc lb project loopback-node-app
+		cd loopback-node-app
+		slc install strong-cluster-control
+		slc install strong-agent
+		slc install loopback@1.0.0
+		slc lb model product
+		slc lb model customer
+		slc lb model store
+		echo "open a browser on your host machine to http://33.33.33.10:3000" 
+		echo "open a browser on your host machine to http://33.33.33.10:3000/explorer"
+		
+		#bootstrap loopback from sample app
+		cd /var/strongnode-app-folder
+		slc example
+		cd sls-sample-app
+
+
+		#bootstrap strong node web sample
+		
+		#bootstrap strong node chat sample
+		
+		
+		
+		#location of the active app
+		cd /var/strongnode-app-folder/loopback-node-app
+		#start the server
+		slc run .
+		#slc debug . node-inspector --web-port=3000
 		
 fi
