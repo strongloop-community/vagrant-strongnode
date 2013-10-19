@@ -2,11 +2,11 @@
 
 ###What
 
-Vagrant virtual box of StrongLoop
+Vagrant virtual box of StrongLoop Node.js server
 
 ###Why
 
-Because vagrant boxes are sweet!
+Standup StrongLoop virtual server fast for demo's or dev.
 
 ###How
 
