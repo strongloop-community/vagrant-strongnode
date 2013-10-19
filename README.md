@@ -1,6 +1,17 @@
 #StrongNode with Ubuntu precise 64 VirtualBox - Vagrant
 
-###How to Use
+###What
+
+Vagrant virtual box of StrongLoop
+
+###Why
+
+Because vagrant boxes are sweet!
+
+###How
+
+**requires Vagrant 1.3.5 **
+
 1. Download and install VirtualBox by [clicking here](https://www.virtualbox.org/wiki/Downloads)
 2. Download and install Vagrant by [clicking here](http://downloads.vagrantup.com/)
 3. Clone this repository.
