@@ -41,13 +41,20 @@ then
 		slc lb model product
 		slc lb model customer
 		slc lb model store
-		echo "open a browser on your host machine to http://33.33.33.10:3000" 
-		echo "open a browser on your host machine to http://33.33.33.10:3000/explorer"
 		
 		#location of the active app
 		cd /var/strongnode-app-folder/loopback-node-app
+		
 		#start the server
 		slc run app.js &
 		#slc debug . node-inspector --web-port=3000
+		
+		echo "loopback node.js app created at strongnode-app-folder/loopback-node-app" 
+		echo "	api created with model types: store, customer, product " 
+		
+		echo "..."
+		echo "open a browser on your host machine:" 
+		echo "	to http://33.33.33.10:3000"
+		echo "	or http://33.33.33.10:3000/explorer"
 		
 fi
