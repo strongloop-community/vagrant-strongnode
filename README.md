@@ -28,3 +28,7 @@ Standup StrongLoop virtual server fast for demo's or dev.
 ###Further Reading
 - [Strong Node ](http://StrongLoop.com)
 - [Vagrant Documentation](http://docs.vagrantup.com/v2/getting-started/index.html)
+- [How to debug Node.js from within Vagrant](http://neilk.net/blog/2013/08/21/how-to-debug-node-dot-js-from-within-vagrant)
+- [vagrant-ssh-node](https://gist.github.com/neilk/6311127)
+
+
