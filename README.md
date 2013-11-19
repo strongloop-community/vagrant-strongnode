@@ -1,4 +1,8 @@
-#StrongNode with Ubuntu precise 64 VirtualBox - Vagrant
+#StrongLoop on Vagrant
+
+![image](http://strongloop.com/wp-content/uploads/2013/04/logo-strongloop.png)
+
+![image](http://www.vagrantup.com/images/logo_vagrant-81478652.png) 
 
 ###Why Vagrant is great for more that just Sys Ops
 
