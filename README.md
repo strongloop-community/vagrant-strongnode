@@ -1,16 +1,16 @@
 #StrongNode on Vagrant, Ubuntu precise 64 VirtualBox
 
-![image](http://strongloop.com/wp-content/uploads/2013/04/logo-strongloop.png)
-
 ![image](http://www.vagrantup.com/images/logo_vagrant-81478652.png) 
 
 ###Why Vagrant is great for more that just Sys Ops
 
-Vagrant provides easy to configure, reproducible, and portable work environment. Vagrant machines are simple to use and easy to share.  For **developers** Vagrant can isolate your server machine environment making it easy for you ( or someone else ) to create development environments from the same configuration. This whether your working on Linux, Mac OS X, or Windows, you can be confided your running in the same environment, allowing you to combat the every present "it works on my machine" response that occurs in modern complex machine configurations.
+Vagrant provides easy to configure, reproducible, and portable work environment. Vagrant machines are simple to use and easy to share.  
+
+For **developers** Vagrant can isolate your server machine environment making it easy for you ( or someone else ) to create development environments from the same configuration. This whether your working on Linux, Mac OS X, or Windows, you can be confided your running in the same environment, allowing you to combat the every present "it works on my machine" response that occurs in modern complex machine configurations.
 
 Vagrant VM's are also great for **designer's**, **manager's** and **product stakeholder's** since Vagrant will automatically setup a demo or stage machine with a since `vagrant up` command.  Once your engineering team configures the Vagrantfile you can get access to the latest and greatest and focus on getting your work done instead of bothering a developer to get access to the product.
 
-Vagrant Machines are provisioned on top of VirtualBox, VMware, AWS, or [any other provider](/v2/providers/index.html). [Provisioning tools](/v2/provisioning/index.html) such as shell scripts, Chef, or Puppet, can be used to automatically install and configure software on the virtual machine.
+Vagrant Machines are provisioned on top of [VirtualBox](https://www.virtualbox.org/), [VMware](http://www.vmware.com/), AWS, or [any other provider](http://docs.vagrantup.com/v2/providers/). [Provisioning tools](http://docs.vagrantup.com/v2/provisioning/) such as shell scripts, Chef, or Puppet, can be used to automatically install and configure software on the virtual machine.
 
 the `Vagrant` command wrapper uses VirtualBox/VMWare making it easy to:
 
@@ -58,8 +58,9 @@ Additionally the VBOXManage command ```VBoxManage list runningvms``` is handy fo
 
 The [vagrant-strongnode](https://github.com/strongloop-community/vagrant-strongnode) Vagrantfile pre-configures a private network at [http://33.33.33.10/](http://33.33.33.10/) so you only need to open a local browser to access server.
 
+![image](http://strongloop.com/wp-content/uploads/2013/04/logo-strongloop.png)
 
-You can place additional StrongLoop node apps in vagrant-strongnode/strongnode-app-folder.  The [bootstrap-strongnode.sh](https://github.com/strongloop-community/vagrant-strongnode/blob/master/bootstrap-strongnode.sh) file maps this local folder to your Vagrant VM `/var/strongnode-app-folder` making it easy to add new StrongLoop and LoopBack node applications to your running Vagrant Box.
+You can place additional StrongLoop node apps in `vagrant-strongnode/strongnode-app-folder`.  The [bootstrap-strongnode.sh](https://github.com/strongloop-community/vagrant-strongnode/blob/master/bootstrap-strongnode.sh) file maps this local folder to your Vagrant VM `/var/strongnode-app-folder` making it easy to add new StrongLoop and LoopBack node applications to your running Vagrant Box.
 
 From your dev machine command line you can exit the existing Vagrant executing application or create a new LoopBack application with:
 
