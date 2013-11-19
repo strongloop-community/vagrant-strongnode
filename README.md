@@ -1,4 +1,4 @@
-#StrongLoop on Vagrant
+#StrongNode on Vagrant, Ubuntu precise 64 VirtualBox
 
 ![image](http://strongloop.com/wp-content/uploads/2013/04/logo-strongloop.png)
 
