@@ -1,8 +1,8 @@
-#StrongNode on Vagrant, Ubuntu precise 64 VirtualBox
+#StrongNode on Vagrant
 
 ![image](http://www.vagrantup.com/images/logo_vagrant-81478652.png) 
 
-###Why Vagrant is great for more that just Sys Ops
+###Vagrant is great for more that just Sysops admins
 
 Vagrant provides easy to configure, reproducible, and portable work environment. Vagrant machines are simple to use and easy to share.  
 
@@ -21,11 +21,11 @@ the `Vagrant` command wrapper uses VirtualBox/VMWare making it easy to:
 
 You can find more information at the official Vagrant Site [VagrantUp](http://www.vagrantup.com/)
 
-###What
+###Preconfigured StrongLoop Vagrant Box
 
 A preconfigured Vagrant virtual box of the StrongLoop Node platform can be found at [strongloop-community/vagrant-strongnode](https://github.com/strongloop-community/vagrant-strongnode) allowing you to try, test and develop with 4 commands
 
-###How
+###Standing up StrongLoop with Vagrant
 
 If you already have Vagrant installed (*requires Vagrant 1.3.5*) then getting started with the StrongLoop Vagrant configurations is a simple as:
 
@@ -41,11 +41,11 @@ If you don't have Vagrant on your machine the process takes about 10 minutes by 
 - Download and install VirtualBox at [virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
 - Download and install Vagrant at [downloads.vagrantup.com ](http://downloads.vagrantup.com/)
 
-###The basic Vagrant subcommands
+###Vagrant subcommands
 
 If you followed the instructions above you have already been introduced to the  ```Vagrant Up```, and ```Vagrant ssh``` Vagrant sub commands. Vagrant commands need to be run from within the Vagrant folder, often this is the same folder the Vagrantfile resides in.  A full list of commands can be found at [docs.vagrantup.com](http://docs.vagrantup.com/v2/cli/index.html)
 
-####The basics are 
+####Vagrant basics 
 - `Vagrant up` : creates and configures a machines according to the Vagrantfile
 - `Vagrant ssh` : SSH into a running Vagrant machine and give you access to a shell 
 - `Vagrant suspend` :  suspends the machine Vagrant is managing 
