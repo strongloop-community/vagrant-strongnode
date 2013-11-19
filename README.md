@@ -54,7 +54,9 @@ If you followed the instructions above you have already been introduced to the  
 
 Additionally the VBOXManage command ```VBoxManage list runningvms``` is handy for listing current Vagrant Boxes.   This is useful when your jumping from machine to machine and cannot remember the state of your last Vagrant Box.
 
-###After you have your Vagrant instance up via the `vagrant up` command You can immediately start to use the machine.
+###'Vagrant up' for an on demand strong loop mobile backend
+
+After you have your Vagrant instance up via the `vagrant up` command You can immediately start to use the machine.
 
 The [vagrant-strongnode](https://github.com/strongloop-community/vagrant-strongnode) Vagrantfile pre-configures a private network at [http://33.33.33.10/](http://33.33.33.10/) so you only need to open a local browser to access server.
 
