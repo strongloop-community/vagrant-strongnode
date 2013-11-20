@@ -4,11 +4,11 @@
 
 ###Vagrant is great for more that just Sysops admins
 
-Vagrant provides easy to configure, reproducible, and portable work environment. Vagrant machines are simple to use and easy to share.
+Vagrant provides easy to configure, reproducible, and portable virtual machine environment. Vagrant machines are simple to use and easy to share.
 
-For **developers** Vagrant can isolate your server machine environment making it easy for you (or someone else) to create development environments from the same configuration. Whether you are working on Linux, Mac OS X, or Windows, you can be confident you're running in the same environment, allowing you to combat the every present "it works on my machine" response that occurs in modern complex machine configurations.
+For **developers** Vagrant can isolate a machine environment making it easy for you (or someone else) to create development environments from the same configuration. Whether you are working on Linux, Mac OS X, or Windows, you can be confident you're running in the same environment, allowing you to combat the every present "it works on my machine" response that occurs in modern complex machine configurations.
 
-Vagrant VM's are also great for **designers**, **managers** and **product stakeholders** since Vagrant will automatically setup a demo or staging machine with a since `vagrant up` command.  Once your engineering team configures the Vagrantfile you can get access to the latest and greatest and focus on getting your work done instead of bothering a developer to get access to the product.
+Vagrant VM's are also great for **designers**, **managers** and **product stakeholders** since Vagrant will automatically setup a demo or staging machine with a since `vagrant up` command.  Once engineering configures the Vagrantfile you can get access to the latest and greatest and focus on getting your work done instead of bothering a developer to get access to the product.
 
 Vagrant Machines are provisioned on top of [VirtualBox](https://www.virtualbox.org/), [VMware](http://www.vmware.com/), AWS, or [any other provider](http://docs.vagrantup.com/v2/providers/). [Provisioning tools](http://docs.vagrantup.com/v2/provisioning/) such as shell scripts, Chef, or Puppet, can be used to automatically install and configure software on the virtual machine.
 
@@ -43,20 +43,20 @@ If you don't have Vagrant on your machine the process takes about 10 minutes by 
 
 ###Vagrant subcommands
 
-If you followed the instructions above you have already been introduced to the  ```Vagrant Up```, and ```Vagrant ssh``` Vagrant sub commands. Vagrant commands need to be run from within the Vagrant folder, often this is the same folder the Vagrantfile resides in.  A full list of commands can be found at [docs.vagrantup.com](http://docs.vagrantup.com/v2/cli/index.html)
+If you followed the instructions above you have already been introduced to the  ```Vagrant Up```, and ```Vagrant ssh``` Vagrant sub commands. vagrant commands need to be run from within the Vagrant folder, often this is the same folder the Vagrantfile resides in.  A full list of commands can be found at [docs.vagrantup.com](http://docs.vagrantup.com/v2/cli/index.html)
 
 ####Vagrant basics 
-- `Vagrant up` : creates and configures a machines according to the Vagrantfile
-- `Vagrant ssh` : SSH into a running Vagrant machine and give you access to a shell 
-- `Vagrant suspend` :  suspends the machine Vagrant is managing 
-- `Vagrant resume` : resumes a suspended Vagrant machine
-- `Vagrant destroy` : stops the running machine and destroys all resources that were created
+- `vagrant up` : creates and configures a machines according to the Vagrantfile
+- `vagrant ssh` : SSH into a running Vagrant machine and give you access to a shell 
+- `vagrant suspend` :  suspends the machine Vagrant is managing 
+- `vagrant resume` : resumes a suspended Vagrant machine
+- `vagrant destroy` : stops the running machine and destroys all resources that were created
 
 Additionally the VBOXManage command ```VBoxManage list runningvms``` is handy for listing current Vagrant Boxes.   This is useful when your jumping from machine to machine and cannot remember the state of your last Vagrant Box.
 
 ###'Vagrant up' for an on demand strong loop mobile backend
 
-After you have your Vagrant instance up via the `vagrant up` command You can immediately start to use the machine.
+After you have your Vagrant Box instance up via the `vagrant up` command You can immediately start to use the machine.
 
 The [vagrant-strongnode](https://github.com/strongloop-community/vagrant-strongnode) Vagrantfile pre-configures a private network at [http://33.33.33.10/](http://33.33.33.10/) so you only need to open a local browser to access server.
 
@@ -73,12 +73,12 @@ cd myNewApp
 slc lb install
 ```
 
-Log into your Vagrant Box by running `vagrant ssh` from within the `~/vagrant-strongnode` folder.  Once you have ssh'ed into the Box you have full access to the SLC command line.  Allowing your to run applications 'sudo slc run /var/default-node-app/app.js'; run the slc node-inspector debugger `sudo slc debug /var/default-node-app/app.js` or configure StrongOps via `slc`
+Log into your Vagrant Box by running `vagrant ssh` from within the `~/vagrant-strongnode` folder.  Once you have ssh'ed into the Box you have full access to the `slc` command line.  allowing your to run applications 'sudo slc run /var/default-node-app/app.js'; run the slc node-inspector debugger `sudo slc debug /var/default-node-app/app.js` or configure StrongOps via `slc`
 
 So get started `Vagrant up` and `open http://33.33.33.10/` and get started with StrongLoop in Vagrant.
 	
 ###Further Reading
-- [Strong Node ](http://StrongLoop.com)
+- [Strong Node](http://StrongLoop.com)
 - [Vagrant Documentation](http://docs.vagrantup.com/v2/getting-started/index.html)
 - [How to debug Node.js from within Vagrant](http://neilk.net/blog/2013/08/21/how-to-debug-node-dot-js-from-within-vagrant)
 - [vagrant-ssh-node](https://gist.github.com/neilk/6311127)
