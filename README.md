@@ -4,11 +4,11 @@
 
 ###Vagrant is great for more that just Sysops admins
 
-Vagrant provides easy to configure, reproducible, and portable work environment. Vagrant machines are simple to use and easy to share.  
+Vagrant provides easy to configure, reproducible, and portable work environment. Vagrant machines are simple to use and easy to share.
 
-For **developers** Vagrant can isolate your server machine environment making it easy for you ( or someone else ) to create development environments from the same configuration. This whether your working on Linux, Mac OS X, or Windows, you can be confided your running in the same environment, allowing you to combat the every present "it works on my machine" response that occurs in modern complex machine configurations.
+For **developers** Vagrant can isolate your server machine environment making it easy for you (or someone else) to create development environments from the same configuration. Whether you are working on Linux, Mac OS X, or Windows, you can be confident you're running in the same environment, allowing you to combat the every present "it works on my machine" response that occurs in modern complex machine configurations.
 
-Vagrant VM's are also great for **designer's**, **manager's** and **product stakeholder's** since Vagrant will automatically setup a demo or stage machine with a since `vagrant up` command.  Once your engineering team configures the Vagrantfile you can get access to the latest and greatest and focus on getting your work done instead of bothering a developer to get access to the product.
+Vagrant VM's are also great for **designers**, **managers** and **product stakeholders** since Vagrant will automatically setup a demo or staging machine with a since `vagrant up` command.  Once your engineering team configures the Vagrantfile you can get access to the latest and greatest and focus on getting your work done instead of bothering a developer to get access to the product.
 
 Vagrant Machines are provisioned on top of [VirtualBox](https://www.virtualbox.org/), [VMware](http://www.vmware.com/), AWS, or [any other provider](http://docs.vagrantup.com/v2/providers/). [Provisioning tools](http://docs.vagrantup.com/v2/provisioning/) such as shell scripts, Chef, or Puppet, can be used to automatically install and configure software on the virtual machine.
 
