@@ -36,14 +36,14 @@ vagrant up
 vagrant ssh
 ```
 
-If you don't have Vagrant on your machine the process takes about 10 minutes by installing the two primary dependancies.
+If you don't have Vagrant on your machine the process takes about 10 minutes by installing the two primary dependencies.
 
 - Download and install VirtualBox at [virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
 - Download and install Vagrant at [downloads.vagrantup.com ](http://downloads.vagrantup.com/)
 
 ###Vagrant subcommands
 
-If you followed the instructions above you have already been introduced to the  ```Vagrant Up```, and ```Vagrant ssh``` Vagrant sub commands. vagrant commands need to be run from within the Vagrant folder, often this is the same folder the Vagrantfile resides in.  A full list of commands can be found at [docs.vagrantup.com](http://docs.vagrantup.com/v2/cli/index.html)
+If you followed the instructions above you have already been introduced to the  `Vagrant Up`, and `Vagrant ssh` Vagrant sub commands. Vagrant commands need to be run from within the Vagrant folder, often this is the same folder the Vagrantfile resides in.  A full list of commands can be found at [docs.vagrantup.com](http://docs.vagrantup.com/v2/cli/index.html)
 
 ####Vagrant basics 
 - `vagrant up` : creates and configures a machines according to the Vagrantfile
