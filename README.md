@@ -15,10 +15,10 @@ Vagrant project to create sandbox/demo environment for StrongLoop and LoopBack N
 1. Download and install VirtualBox by [clicking here](https://www.virtualbox.org/wiki/Downloads)
 1. Download and install Vagrant by [clicking here](http://downloads.vagrantup.com/)
 
-##Running VagrantFile
+##Running Vagrantfile
 
 1. Clone this github repo
-```git clone https://github.com/strongloop-community/vagrant-strongnode`; cd vagrant-strongnode ```
+``` git clone https://github.com/strongloop-community/vagrant-strongnode; cd vagrant-strongnode ```
 1. Provision the vm `vagrant up`
 1. Login to the vm `vagrant ssh`
 1. Start the example loopback Node server `slc run /var/strongnode-app-folder/loopback-node-app/app.js`
