@@ -26,7 +26,7 @@ then
 	# strongloop-node_1.1.0-1_amd64.deb
 	sudo wget -O strongloop-node_amd64.deb http://45ec19d3127bddec1c1d-e57051fde4dbc9469167f8c2a84830dc.r36.cf1.rackcdn.com/strongloop-suite_1.1.0-1_amd64.deb
 	sudo dpkg -i strongloop-node_amd64.deb
-		
+	
 	# Symlink our host strongnode-app-folder to the guest /var/strongnode-app-folder folder
   sudo ln -s /vagrant/strongnode-app-folder /var/strongnode-app-folder
 	sudo chown -R vagrant ~/.npm
