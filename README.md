@@ -28,3 +28,7 @@ Vagrant project to create sandbox/demo environment for StrongLoop and LoopBack N
 - [StrongLoop docs ](http://docs.StrongLoop.com)
 - [Vagrant Documentation](http://docs.vagrantup.com/v2/getting-started/index.html)
 - [Blog Post](post.md)
+
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/7ca7c2f6aef75c2cb0d821319461978b "githalytics.com")](http://githalytics.com/strongloop-community/vagrant-strongnode)
+
+
