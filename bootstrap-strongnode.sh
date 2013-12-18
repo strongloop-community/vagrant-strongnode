@@ -15,22 +15,27 @@ then
 
 	# Install some utility tools
   apt-get install -y python-software-properties
+  apt-get install -y python g++ make
   apt-get install -y vim git subversion curl
   apt-get install -y memcached build-essential
-
+  
   #Install git
   sudo apt-get --yes --force-yes install git
-
-  #Install Node
+  
  	cd /opt
-  sudo apt-get install -y nodejs npm
+  
+  #Install Node
+  apt-get update
+  apt-get install -y nodejs
+  apt-get install -y npm
   
   #Install strong-cli
+  apt-get update
   #npm install -g strong-cli
   
 	# Symlink our host strongnode-app-folder to the guest /var/strongnode-app-folder folder
   sudo ln -s /vagrant/strongnode-app-folder /var/strongnode-app-folder
-	sudo chown -R vagrant ~/.npm
+	#sudo chown -R vagrant ~/.npm
   
 	echo "You can place other node apps in the strongnode-app-folder/ and find them at /var/node-app-folder/"
 	echo " 'slc run /var/strongnode-app-folder/myApp/app.js' to run the strong node node app in strongnode-app-folder/myApp"
