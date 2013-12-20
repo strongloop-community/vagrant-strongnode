@@ -25,13 +25,16 @@ then
  	cd /opt
   
   #Install Node
-  apt-get update
-  apt-get install -y nodejs
-  apt-get install -y npm
+  sudo apt-get -y update
+  sudo apt-get install -y python-software-properties python g++ make
+  sudo add-apt-repository -y ppa:chris-lea/node.js
+  sudo apt-get update
+  sudo apt-get install -y nodejs
   
   #Install strong-cli
   apt-get update
-  #npm install -g strong-cli
+  npm install -g strong-cli
+  #sudo -i npm install strong-cli -g
   
 	# Symlink our host strongnode-app-folder to the guest /var/strongnode-app-folder folder
   sudo ln -s /vagrant/strongnode-app-folder /var/strongnode-app-folder
