@@ -3,7 +3,7 @@ Summary
 
 Vagrant project to create sandbox/demo environment for StrongLoop and LoopBack Node apps.
 
-- Requires Vagrant 1.3.5
+- Reccomend Vagrant 1.3.5
 - Uses the precise64.box virtualbox
 - Configures vm.network private_network at '33.33.33.10'
 - Installs StrongLoop 1.1.0-1_amd64.deb distro
