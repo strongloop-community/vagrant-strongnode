@@ -38,7 +38,6 @@ then
   
 	# Symlink our host strongnode-app-folder to the guest /var/strongnode-app-folder folder
   sudo ln -s /vagrant/strongnode-app-folder /var/strongnode-app-folder
-	#sudo chown -R vagrant ~/.npm
   
 	echo "You can place other node apps in the strongnode-app-folder/ and find them at /var/node-app-folder/"
 	echo " 'slc run /var/strongnode-app-folder/myApp/app.js' to run the strong node node app in strongnode-app-folder/myApp"
