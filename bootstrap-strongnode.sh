@@ -79,11 +79,14 @@ then
 	echo " 'slc run /var/strongnode-app-folder/myApp/app.js' to run the strong node node app in strongnode-app-folder/myApp"
 	echo "  "
 	
-	### Optional installs and configurations
-	#install some useful npm packages
+	######################################################################
+	## Optional Install and Configurations
+	######################################################################
 	#sudo npm install -g forever
 	
+	######################################################################
 	### Optional startup commands
+	######################################################################
 	#start the server
 	#slc run app.js &
 	# forever -w app.js
