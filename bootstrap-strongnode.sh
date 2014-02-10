@@ -59,7 +59,7 @@ then
   slc lb model store
 	
 	######################################################################
-	## Clone a sampel app
+	## Clone a sample app
 	######################################################################
 	#echo "  "
 	#echo "clone an existing repo strongloop-community/loopback-example"

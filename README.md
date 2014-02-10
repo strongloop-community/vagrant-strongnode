@@ -43,6 +43,19 @@ to run the example app:
 - Creates example LoopBack app
 
 
+Regarding the warning: 
+
+``` 
+The guest additions on this VM do not match the install version of
+VirtualBox! This may cause things such as forwarded ports, shared
+folders, and more to not work properly. If any of those things fail on
+this machine, please update the guest additions and repackage the
+box.
+```
+
+One option is to install the vbguest plugin by runing the command ```vagrant plugin install vagrant-vbguest``` in the directory that keeps holds the VagrantFile. 
+
+
 ##Some Vagrant basics
 
 
