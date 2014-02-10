@@ -33,15 +33,22 @@ then
   
   #Install strong-cli
   apt-get update
+	
+	# Symlink our host strongnode-app-folder to the guest /var/strongnode-app-folder folder
+  sudo ln -s /vagrant/strongnode-app-folder /var/strongnode-app-folder
+	
+	######################################################################
+	## Install the StrongLoop CLI
+	######################################################################
+	echo "-SLC- npm install strong-cli"
   npm install -g strong-cli
   #sudo -i npm install strong-cli -g
   
-	# Symlink our host strongnode-app-folder to the guest /var/strongnode-app-folder folder
-  sudo ln -s /vagrant/strongnode-app-folder /var/strongnode-app-folder
-  
-	echo "You can place other node apps in the strongnode-app-folder/ and find them at /var/node-app-folder/"
-	echo " 'slc run /var/strongnode-app-folder/myApp/app.js' to run the strong node node app in strongnode-app-folder/myApp"
-
+	
+	######################################################################
+	## Create a sample app
+	######################################################################
+	echo "-SLC- create loopback-node-app"
 	#bootstrap loopback from base
 	cd /var/strongnode-app-folder
 	slc lb project loopback-node-app
@@ -50,15 +57,33 @@ then
 	slc lb model product
   slc lb model customer
   slc lb model store
- 	 
+	
+	######################################################################
+	## Clone a sampel app
+	######################################################################
+	#echo "  "
+	#echo "clone an existing repo strongloop-community/loopback-example"
+	#cd /var/strongnode-app-folder
+	#git clone https://github.com/strongloop-community/loopback-example
+	#cd loopback-example
+	#npm install
+	
+	######################################################################
+	##
+	######################################################################
+	echo "  "
   echo "loopback node.js app created at strongnode-app-folder/loopback-node-app"
   echo "created with model types: store, customer, product"
-  
-	#location of the active app
-	#cd /var/strongnode-app-folder/loopback-node-app
+	echo "  "
+	echo "You can place other node apps in the strongnode-app-folder/ and find them at /var/node-app-folder/"
+	echo " 'slc run /var/strongnode-app-folder/myApp/app.js' to run the strong node node app in strongnode-app-folder/myApp"
+	echo "  "
+	
+	### Optional installs and configurations
 	#install some useful npm packages
 	#sudo npm install -g forever
 	
+	### Optional startup commands
 	#start the server
 	#slc run app.js &
 	# forever -w app.js
