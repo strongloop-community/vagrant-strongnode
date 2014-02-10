@@ -44,13 +44,13 @@ then
 
 	#bootstrap loopback from base
 	cd /var/strongnode-app-folder
-	#slc lb project loopback-node-app
-	#cd loopback-node-app
+	slc lb project loopback-node-app
+	cd loopback-node-app
 	#slc install
-	#slc lb model product
-  #slc lb model customer
-  #slc lb model store
-  
+	slc lb model product
+  slc lb model customer
+  slc lb model store
+ 	 
   echo "loopback node.js app created at strongnode-app-folder/loopback-node-app"
   echo "created with model types: store, customer, product"
   
@@ -64,7 +64,7 @@ then
 	# forever -w app.js
 	#node server.js /var/log/php.log
 	#slc debug . node-inspector --web-port=3000
-	
+  	
 	echo "machine configured. \":private_network\" configured at http://33.33.33.10"
 	echo "to run the example app:"
 	echo "1. vagrant ssh"
