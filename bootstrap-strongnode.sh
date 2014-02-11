@@ -41,9 +41,8 @@ then
 	## Install the StrongLoop CLI
 	######################################################################
 	echo "-SLC- npm install strong-cli"
-  npm install -g strong-cli
+  sudo npm install -g strong-cli
   #sudo -i npm install strong-cli -g
-  
 	
 	######################################################################
 	## Create a sample app

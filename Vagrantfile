@@ -8,15 +8,14 @@ Vagrant.configure("2") do |config|
 	  # via the IP. Host-only networks can talk to the host machine as well as
 	  # any other machines on the same network, but cannot be accessed (through this
 	  # network interface) by any external networks.
+    
 		config.vm.network :private_network, ip: '33.33.33.10'
-		#config.vm.forward_port("http", 80, 8888)
-	  #config.vm.forward_port("mysql", 3306, 3306)
-	  #config.vm.forward_port("node", 8228, 8228)
-		
-		# View the documentation for the provider you're using for more
-	  # information on available options.
-	  # config.ssh.max_tries = 40
-	  # config.ssh.timeout   = 120
+    
+    #config.vm.forward_port("node-inspector", 8080, 8080)
+    config.vm.network :forwarded_port, host:8080, guest:8080
+    
+    #config.vm.forward_port("node-debugger", 5858, 5858)
+    config.vm.network :forwarded_port, host:5858, guest:5858
 		
     config.vm.provider :virtualbox do |vb|
         vb.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root", "1"]
