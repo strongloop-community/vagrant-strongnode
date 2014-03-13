@@ -53,8 +53,7 @@ this machine, please update the guest additions and repackage the
 box.
 ```
 
-One option is to install the vbguest plugin by runing the command ```vagrant plugin install vagrant-vbguest``` in the directory that keeps holds the VagrantFile. 
-
+One option is to install the vbguest plugin by runing the command ```vagrant plugin install vagrant-vbguest``` in the directory that keeps holds the VagrantFile.
 
 ##Some Vagrant basics
 

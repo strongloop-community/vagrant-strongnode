@@ -1,8 +1,9 @@
 Vagrant.configure("2") do |config|
-    config.vm.box = "strongnode"
+    config.vm.host_name = "strongloop.box"
+    config.vm.box = "strongloop"
     config.vm.box_url = "http://files.vagrantup.com/precise64.box"
     
-		config.vm.provision :shell, :path => "bootstrap-strongnode.sh"
+		config.vm.provision :shell, :path => "bootstrap.sh"
     
 	  # Assign this VM to a host-only network IP, allowing you to access it
 	  # via the IP. Host-only networks can talk to the host machine as well as
